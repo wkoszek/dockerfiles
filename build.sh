@@ -3,7 +3,7 @@
 set +x
 
 trap 'rm _.dirs' SIGINT SIGTRAP SIGILL SIGTERM
-find wkoszek -depth 1 -type d > _.dirs
+find wkoszek -maxdepth 1 -mindepth 1 -type d > _.dirs
 
 echo "# ----- will build following directories -----"
 cat _.dirs
