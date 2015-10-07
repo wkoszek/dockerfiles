@@ -1,0 +1,14 @@
+sudo: required
+group: edge
+language: ruby
+rvm:
+- 2.0.0
+
+services:
+- docker
+
+before_install:
+- ./build.sh
+
+script:
+- docker ps -a
