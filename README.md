@@ -22,3 +22,8 @@ its environment variables by executing this script:
 
 https://raw.githubusercontent.com/wkoszek/docker_edu/master/travis_setup.sh
 
+
+# Author
+
+- Wojciech Adam Koszek, [wojciech@koszek.com](mailto:wojciech@koszek.com)
+- [http://www.koszek.com](http://www.koszek.com)
