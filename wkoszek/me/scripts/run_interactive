@@ -1,0 +1,1 @@
+docker run -ti -v /Users/wk/w/me:/me --entrypoint bash wkoszek/me
