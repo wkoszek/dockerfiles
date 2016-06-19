@@ -1,1 +1,5 @@
-docker run -ti -v /Users/wk/w/me:/me -w /me wkoszek/me
+#!/bin/sh
+docker run -ti \
+	-e "LOCAL_USER_ID=`id -u $USER`" \
+	-v /Users/wk/w/me:/me \
+	-w /me wkoszek/me
