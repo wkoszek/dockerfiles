@@ -1,1 +1,6 @@
-docker run -ti -v /Users/wk/w/me:/me --entrypoint bash wkoszek/me
+docker run \
+	-ti \
+	-u 1000 \
+	-v ~/r/me:/me \
+	--entrypoint bash \
+	wkoszek/me

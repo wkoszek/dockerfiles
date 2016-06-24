@@ -1,4 +1,5 @@
 #!/bin/sh
 docker run -ti \
-	-v /Users/wk/w/me:/me \
-	-w /me wkoszek/me
+	-v ~/r/me:/me \
+	-w /me \
+	wkoszek/me
