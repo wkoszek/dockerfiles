@@ -1,0 +1,16 @@
+version: '2'
+services:
+  web:
+    image: wkoszek/me
+    ports:
+     - "5000:5000"
+    volumes:
+     - /home/wkoszek/r/me:/me
+    depends_on:
+     - phantomjs
+    links:
+     - phantomjs
+    environment:
+     TEST_CI: yes
+  phantomjs:
+    image: wernight/phantomjs
