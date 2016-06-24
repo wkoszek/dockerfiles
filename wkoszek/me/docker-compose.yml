@@ -11,6 +11,6 @@ services:
     links:
      - phantomjs
     environment:
-     TEST_CI: yes
+     TEST_CI: "yes"
   phantomjs:
     image: wernight/phantomjs

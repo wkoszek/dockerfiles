@@ -2,7 +2,7 @@
 
 set -e
 
-export NO_HEADLESS=yes
+#export NO_HEADLESS=yes
 export DISPLAY=":99.0"
 #sh -e /etc/init.d/xvfb start
 
