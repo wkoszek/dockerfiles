@@ -10,7 +10,9 @@ RUN bundle install
 RUN apt-get update && apt-get install -y \
 	aspell \
 	aspell-en \
-	nodejs
+	nodejs \
+	nginx \
+	linkchecker
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod a+x /entrypoint.sh
