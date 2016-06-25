@@ -6,9 +6,5 @@ services:
      - "5000:5000"
     volumes:
      - /home/wkoszek/r/me:/me
-    depends_on:
-     - phantomjs
-    links:
-     - phantomjs
     environment:
      TEST_CI: "yes"
