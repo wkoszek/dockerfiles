@@ -18,13 +18,9 @@ RUN apt-get update -qq && apt-get install -y \
 	nvi
 
 #--------------------------------------------------------------------------
-COPY files/aspell_setup.sh /me
-RUN /me/aspell_setup.sh
-
-#--------------------------------------------------------------------------
 # PhantomJS
 ENV PHANTOMJS_VER "phantomjs-2.1.1-linux-x86_64"
-ENV PHANTOMJS_URL https://bitbucket.org/ariya/phantomjs/downloads/${PHANTOMJS_VER}.tar.bz2
+ENV PHANTOMJS_URL https://github.com/wkoszek/files/raw/master/${PHANTOMJS_VER}.tar.bz2
 RUN cd /tmp && \
 	curl -A "Mozilla" -s -L -o - ${PHANTOMJS_URL} | tar xjf - && \
 	mv ${PHANTOMJS_VER}/bin/phantomjs /usr/local/bin && \

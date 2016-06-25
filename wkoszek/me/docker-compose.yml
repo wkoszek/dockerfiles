@@ -5,6 +5,6 @@ services:
     ports:
      - "5000:5000"
     volumes:
-     - /home/wkoszek/r/me:/me
+     - ${HOME}/r/me:/me
     environment:
      TEST_CI: "yes"

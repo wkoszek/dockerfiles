@@ -1,4 +1,3 @@
 mkdir -p files
 cp ~/r/me/Gemfile ~/r/me/Gemfile.lock files/
-cp ~/r/me/scripts/aspell_setup.sh files/
 docker build -t wkoszek/me .

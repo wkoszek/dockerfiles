@@ -7,7 +7,11 @@ export DISPLAY=":99.0"
 #sh -e /etc/init.d/xvfb start
 
 echo "# entrypoint"
+pwd
+ls -la
 make doit pub
+echo $?
+echo "# finished"
 
 
 #sleep 3 # give xvfb some time to start
