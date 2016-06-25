@@ -7,7 +7,6 @@ export DISPLAY=":99.0"
 #sh -e /etc/init.d/xvfb start
 
 echo "# entrypoint"
-make bootstrap
 make doit pub
 
 
