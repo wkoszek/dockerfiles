@@ -1,6 +1,11 @@
 #!/bin/bash
 
 set +x
+set +e
+
+[ -z "$DOCKER_EMAIL" ] && echo "set DOCKER_EMAIL env" && exit 1
+[ -z "$DOCKER_USERNAME" ] && echo "set DOCKER_USERNAME env" && exit 1
+[ -z "$DOCKER_PASSWORD" ] && echo "set DOCKER_PASSWORD env" && exit 1
 
 trap 'rm _.dirs' SIGINT SIGTRAP SIGILL SIGTERM EXIT
 find wkoszek -maxdepth 1 -mindepth 1 -type d > _.dirs
