@@ -9,6 +9,7 @@ export DISPLAY=":99.0"
 echo "# entrypoint"
 pwd
 ls -la
+make bootstrap
 make doit pub
 echo $?
 echo "# finished"
