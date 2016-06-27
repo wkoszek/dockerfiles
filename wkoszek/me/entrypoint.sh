@@ -6,6 +6,9 @@ set -e
 export DISPLAY=":99.0"
 #sh -e /etc/init.d/xvfb start
 
+echo "# start ssh-agent"
+eval `ssh-agent`
+
 echo "# entrypoint"
 pwd
 ls -la
