@@ -10,6 +10,7 @@ echo "# start ssh-agent"
 eval `ssh-agent`
 chmod 600 /me/etc/deploy
 ssh-add /me/etc/deploy
+mkdir  -p ~/.ssh
 cp /me/etc/ssh_config ~/.ssh/config
 
 echo "# entrypoint"
