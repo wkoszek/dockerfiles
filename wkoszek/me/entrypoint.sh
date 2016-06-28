@@ -14,8 +14,8 @@ echo "# start ssh-agent"
 eval `ssh-agent`
 chmod 600 /me/etc/deploy
 ssh-add /me/etc/deploy
-ssh-keyscan -H github.com > ~/.ssh/known_hosts
 mkdir  -p ~/.ssh
+ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 cp /me/etc/ssh_config ~/.ssh/config
 
 echo "# entrypoint"
