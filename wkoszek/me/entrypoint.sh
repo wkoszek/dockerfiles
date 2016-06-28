@@ -6,6 +6,10 @@ set -e
 export DISPLAY=":99.0"
 #sh -e /etc/init.d/xvfb start
 
+echo "# git stuff"
+git config --global user.email "wojciech@koszek.com"
+git config --global user.name "Wojciech Adam Koszek"
+
 echo "# start ssh-agent"
 eval `ssh-agent`
 chmod 600 /me/etc/deploy
