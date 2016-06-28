@@ -10,6 +10,7 @@ RUN bundle install
 RUN apt-get update -qq && apt-get install -y \
 	aspell \
 	aspell-en \
+	moreutils \
 	nodejs \
 	nginx \
 	linkchecker \

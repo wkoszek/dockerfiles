@@ -21,8 +21,8 @@ cp /me/etc/ssh_config ~/.ssh/config
 echo "# entrypoint"
 pwd
 ls -la
-make bootstrap
-make doit pub
+make bootstrap | ts
+make doit pub | ts
 echo $?
 echo "# finished"
 
