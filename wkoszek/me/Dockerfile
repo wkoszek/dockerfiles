@@ -16,7 +16,13 @@ RUN apt-get update -qq && apt-get install -y \
 	linkchecker \
 	curl \
 	libfontconfig \
-	nvi
+	nvi \
+	&& \
+    rm -rf \
+	/var/lib/apt \
+	/var/lib/dpkg \
+	/var/lib/cache \
+	/var/lib/log
 
 #--------------------------------------------------------------------------
 # PhantomJS
