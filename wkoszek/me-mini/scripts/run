@@ -1,0 +1,5 @@
+#!/bin/sh
+docker run -ti \
+	-v ~/r/me:/me \
+	-w /me \
+	wkoszek/me
