@@ -1,3 +1,0 @@
-mkdir -p files
-cp ~/r/me/Gemfile ~/r/me/Gemfile.lock files/
-docker build -t wkoszek/me .

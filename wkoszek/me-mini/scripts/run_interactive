@@ -1,6 +1,0 @@
-docker run \
-	-ti \
-	-u 1000 \
-	-v ~/r/me:/me \
-	--entrypoint bash \
-	wkoszek/me
