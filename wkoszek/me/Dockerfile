@@ -1,11 +1,17 @@
 # wkoszek/me dockerfile for github.com/wkoszek/me project
-FROM ruby:2.3.1
+FROM ruby:2.2.4
 MAINTAINER Wojciech A. Koszek <wojciech@koszek.com>
 
 RUN mkdir -p /me
 WORKDIR /me
-COPY files/Gemfile /me/
-RUN bundle install
+RUN git clone https://github.com/wkoszek/me.git /me && \
+	make bootstrap
+
+#RUN cd /tmp && \
+#	git clone https://github.com/wkoszek/me.git && \
+#	mv me/* /me/ && \
+#	cd me && \
+#	bundle install
 
 RUN apt-get update -qq && apt-get install -y \
 	aspell \

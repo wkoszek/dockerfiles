@@ -1,5 +1,8 @@
 #!/bin/sh
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 set -e
 
 #export NO_HEADLESS=yes
@@ -21,7 +24,7 @@ cp /me/etc/ssh_config ~/.ssh/config
 echo "# entrypoint"
 pwd
 ls -la
-make bootstrap | ts
+#make bootstrap | ts
 make doit pub | ts
 echo $?
 echo "# finished"
