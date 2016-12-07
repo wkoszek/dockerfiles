@@ -25,7 +25,7 @@ RUN apt-get update -qq && apt-get install -y \
 	nvi \
 	&& \
     rm -rf \
-	/var/lib/apt \
+	/var/lib/apt/lists/* \
 	/var/lib/dpkg \
 	/var/lib/cache \
 	/var/lib/log
