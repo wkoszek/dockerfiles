@@ -15,7 +15,7 @@ cat _.dirs
 
 echo "# ----- logging into Docker Hub -----"
 if [ "$USER" = "travis" ]; then
-	docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+	echo "${DOCKER_PASSWORD}" | docker login -u="$DOCKER_USERNAME" --password-stdin
 fi
 
 while read D; do
