@@ -15,4 +15,5 @@ RUN \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-CMD bundle install --deployment
+# Get the Gemfile.lock first, and then get all the gems to vendor/
+CMD bundle install && bundle install --deployment
